@@ -1,419 +1,301 @@
-# 🛒 E-Commerce Data Analytics Internship Project
+# 📊 E-Commerce Data Analytics Internship Portfolio
 
-## 📌 Overview
+## 🚀 Overview
 
-This repository contains all four tasks completed as part of the **Data Analytics Internship** at **🏢 ApexPlanet Software Pvt. Ltd.** The project demonstrates the complete Data Analytics workflow, from data cleaning to business storytelling using SQL, Power BI, Excel, and PowerPoint.
+This repository showcases the complete work completed during the **Data Analytics Internship Program at ApexPlanet Software Pvt. Ltd.** The project demonstrates an end-to-end Data Analytics workflow, covering data cleaning, exploratory analysis, business intelligence, dashboard development, data storytelling, and portfolio creation.
 
-### 🎯 Project Objectives
-
-* Clean and preprocess raw e-commerce data.
-* Perform Exploratory Data Analysis (EDA).
-* Generate business insights using SQL.
-* Build interactive dashboards.
-* Create a storytelling presentation for stakeholders.
+The internship was structured into five tasks, each focusing on a critical stage of the analytics lifecycle. Using an E-Commerce dataset, various business insights were uncovered and presented through reports, SQL analysis, interactive dashboards, and professional presentations.
 
 ---
 
-# 📊 Task 1: Data Cleaning & Preprocessing
+# 🎯 Project Objectives
 
-## 🎯 Objective
-
-The goal of this task was to transform raw e-commerce data into a clean and analysis-ready dataset by identifying and correcting data quality issues.
-
-## 🛠️ Tools Used
-
-* 🐬 MySQL
-* 📑 SQL
-* 📗 Microsoft Excel
-
-## 📂 Dataset Information
-
-The dataset includes:
-
-* 🛍️ Order Details
-* 👥 Customer Information
-* 📦 Product Information
-* 💰 Sales Data
-* 🚚 Shipping Information
-* 📈 Revenue Data
-
-## 🔧 Steps Performed
-
-### 📥 Data Import
-
-* Imported CSV dataset into MySQL.
-* Verified table structure and data types.
-
-### 🧹 Data Cleaning
-
-* Removed duplicate records.
-* Eliminated redundant entries.
-* Corrected inconsistent values.
-
-### ❌ Missing Value Handling
-
-* Identified null values.
-* Replaced or removed incomplete records.
-
-### 📅 Data Standardization
-
-* Standardized date formats.
-* Corrected text formatting issues.
-* Unified category names.
-
-### ✅ Data Validation
-
-* Checked numerical columns.
-* Removed invalid values.
-* Ensured data consistency.
-
-### 📤 Data Export
-
-* Exported cleaned dataset for further analysis.
-
-## 🎯 Key Outcomes
-
-✔️ Improved data quality
-✔️ Removed inconsistencies
-✔️ Enhanced data reliability
-✔️ Prepared dataset for analysis
-
-## 📁 Deliverables
-
-* SQL Cleaning Script
-* Cleaned CSV Dataset
-* Data Dictionary
-* Documentation
+* Clean and prepare raw business data for analysis.
+* Perform Exploratory Data Analysis (EDA) to uncover trends and patterns.
+* Answer business questions using SQL.
+* Build interactive dashboards for decision-making.
+* Create data-driven business stories and recommendations.
+* Develop a professional analytics portfolio.
 
 ---
 
-# 📈 Task 2: Exploratory Data Analysis (EDA) & SQL Insights
+# 🛠️ Tools & Technologies Used
 
-## 🎯 Objective
-
-Analyze the cleaned dataset using SQL queries to uncover trends, patterns, and actionable business insights.
-
-## 🛠️ Tools Used
-
-* 🐬 MySQL
-* 📑 SQL
-* 📗 Microsoft Excel
-
-## 🔍 Analysis Performed
-
-### 💰 Sales Analysis
-
-* Total Revenue Generated
-* Monthly Revenue Trends
-* Yearly Revenue Trends
-* Revenue by Category
-
-### 👥 Customer Analysis
-
-* Total Customers
-* Top Customers by Revenue
-* Customer Purchase Patterns
-* Repeat Customer Analysis
-
-### 📦 Product Analysis
-
-* Best Selling Products
-* Top Product Categories
-* Revenue Contribution by Product
-* Product Demand Trends
-
-### 🛒 Order Analysis
-
-* Total Orders
-* Average Order Value
-* Order Distribution
-* Order Frequency
-
-## 🧮 SQL Concepts Used
-
-* SUM()
-* AVG()
-* COUNT()
-* MAX()
-* MIN()
-* GROUP BY
-* HAVING
-* ORDER BY
-* WHERE
-* MONTH()
-* YEAR()
-
-## 💡 Key Business Insights
-
-### 📈 Revenue Insights
-
-* Identified peak sales periods.
-* Analyzed revenue growth trends.
-* Determined top revenue contributors.
-
-### 👤 Customer Insights
-
-* Recognized high-value customers.
-* Evaluated purchasing behavior.
-* Identified repeat buyers.
-
-### 📦 Product Insights
-
-* Found best-selling products.
-* Evaluated category performance.
-* Measured product profitability.
-
-## 🎯 Benefits
-
-✔️ Better understanding of sales performance
-✔️ Improved customer insights
-✔️ Data-driven business decisions
-✔️ Identification of growth opportunities
-
-## 📁 Deliverables
-
-* SQL Query File
-* EDA Report
-* Business Insights Report
+| Tool         | Purpose                     |
+| ------------ | --------------------------- |
+| SQL          | Data Cleaning & Analysis    |
+| MySQL        | Database Management         |
+| Excel        | Data Cleaning & Exploration |
+| Power BI     | Dashboard Development       |
+| PowerPoint   | Data Storytelling           |
+| Git & GitHub | Version Control & Portfolio |
+| Statistics   | Hypothesis Testing          |
 
 ---
 
-# 📊 Task 3: Interactive Dashboard Development
+---
 
-## 🎯 Objective
+# 📌 Task 1: Data Immersion & Wrangling
 
-Develop an interactive Power BI dashboard that allows users to monitor business performance and explore insights visually.
+### Objective
 
-## 🛠️ Tools Used
+Prepare raw E-Commerce data for analysis by identifying and resolving data quality issues.
 
-* 📊 Power BI
-* 📗 Excel
-* 📑 DAX
+### Activities Performed
 
-## 🎨 Dashboard Components
+* Dataset Familiarization
+* Data Dictionary Creation
+* Missing Value Treatment
+* Duplicate Removal
+* Data Type Standardization
+* Data Cleaning
+* Feature Engineering
 
-### 💰 KPI Cards
+### Deliverables
 
-Dashboard displays:
+✅ Cleaned Dataset
 
-* Total Revenue
-* Total Orders
-* Total Customers
-* Average Order Value
+✅ Data Dictionary
 
-### 📈 Revenue Analysis
+✅ SQL Cleaning Scripts
 
-* Monthly Revenue Trends
-* Revenue by Category
-* Revenue Distribution
+### Key Outcome
 
-### 👥 Customer Analysis
+Created an analysis-ready dataset with improved quality, consistency, and reliability.
 
-* Customer Segmentation
-* Top Customers
-* Customer Contribution Analysis
+---
 
-### 📦 Product Analysis
+# 📌 Task 2: Exploratory Data Analysis & Business Intelligence
 
-* Best Selling Products
-* Product Revenue Analysis
-* Category Performance
+### Objective
 
-### 🎛️ Interactive Filters
+Explore data patterns and answer business questions using SQL and visualization techniques.
 
-* Year Filter
-* Month Filter
-* Category Filter
-* Customer Filter
+### Activities Performed
 
-### 🔄 Interactive Features
-
-* Drill-down Analysis
-* Cross Filtering
-* Dynamic Reports
-* Interactive Visuals
-
-## 📄 Dashboard Pages
-
-### 🏠 Page 1: Executive Summary
-
-Provides:
-
-* Revenue Overview
-* Customer Overview
-* Product Overview
-* Order Overview
-
-### 🔍 Page 2: Detailed Insights
-
-Provides:
-
+* Descriptive Statistics
+* Revenue Analysis
+* Customer Analysis
 * Product Analysis
 * Category Analysis
-* Customer Behavior
-* Revenue Trends
+* SQL Business Queries
+* Correlation Analysis
 
-## 🎯 Benefits
+### Sample Business Questions
 
-✔️ Easy performance tracking
-✔️ Interactive data exploration
-✔️ Better business monitoring
-✔️ Faster decision-making
+* What are the top-selling products?
+* Which categories generate the highest revenue?
+* What is the monthly sales trend?
+* Who are the most valuable customers?
 
-## 📁 Deliverables
+### Deliverables
 
-* Power BI Dashboard (.pbix)
-* Dashboard Screenshots
-* Dashboard Documentation
+✅ EDA Report
 
----
+✅ SQL Queries
 
-# 📖 Task 4: Data Storytelling Presentation
+✅ Business Insights
 
-## 🎯 Objective
+### Key Outcome
 
-Present analytical findings in a clear and engaging story format to help stakeholders understand business performance and make informed decisions.
-
-## 🛠️ Tools Used
-
-* 📊 Power BI
-* 📗 Excel
-* 📽️ Microsoft PowerPoint
-
-## 📋 Presentation Structure
-
-### 🎬 Slide 1: Title Slide
-
-* Project Title
-* Internship Details
-* Author Information
-
-### 📌 Slide 2: Project Overview
-
-* Business Problem
-* Dataset Overview
-* Objectives
-
-### 🧹 Slide 3: Data Cleaning Summary
-
-* Cleaning Process
-* Data Quality Improvements
-* Dataset Preparation
-
-### 📊 Slide 4: Exploratory Data Analysis
-
-* Revenue Insights
-* Customer Insights
-* Product Insights
-
-### 📈 Slide 5: Dashboard Overview
-
-* Dashboard Features
-* KPI Metrics
-* Interactive Visualizations
-
-### 💰 Slide 6: Revenue Story
-
-* Revenue Trends
-* Peak Sales Periods
-* Growth Opportunities
-
-### 👥 Slide 7: Customer Story
-
-* Customer Behavior
-* Valuable Customers
-* Retention Opportunities
-
-### 📦 Slide 8: Product Story
-
-* Best-Selling Products
-* Top Categories
-* Demand Analysis
-
-### 💡 Slide 9: Recommendations
-
-* Improve customer retention.
-* Focus on top-performing categories.
-* Optimize inventory management.
-* Enhance marketing strategies.
-
-### 🎯 Slide 10: Conclusion
-
-* Key Findings
-* Business Impact
-* Future Improvements
-
-## 🌟 Key Findings
-
-📈 Revenue shows seasonal trends.
-👥 Customer behavior impacts profitability.
-📦 Product categories contribute differently to revenue.
-📊 Dashboards improve business visibility.
-
-## 📁 Deliverables
-
-* PowerPoint Presentation
-* Dashboard Screenshots
-* Storytelling Report
+Generated meaningful insights that support strategic business decisions.
 
 ---
 
-# 🚀 Skills Demonstrated
+# 📌 Task 3: Deep-Dive Analysis & Interactive Dashboarding
 
-## 🧹 Data Cleaning
+### Objective
 
+Develop an interactive dashboard for monitoring business performance and KPIs.
+
+### KPIs Developed
+
+📈 Total Revenue
+
+🛒 Total Orders
+
+👥 Total Customers
+
+💰 Average Order Value
+
+📦 Product Performance
+
+### Dashboard Features
+
+* Interactive Filters
+* Product Analysis
+* Customer Analysis
+* Regional Analysis
+* Sales Trends
+* KPI Monitoring
+
+### Deliverables
+
+✅ Power BI Dashboard
+
+✅ Dashboard Report
+
+✅ KPI Documentation
+
+### Key Outcome
+
+Built a dynamic dashboard enabling real-time business monitoring and decision-making.
+
+---
+
+# 📌 Task 4: Data Storytelling & Statistical Validation
+
+### Objective
+
+Transform data insights into actionable business recommendations.
+
+### Activities Performed
+
+* Business Problem Identification
+* Data Story Development
+* Presentation Design
+* Statistical Validation
+* Recommendation Building
+
+### Business Recommendations
+
+* Improve performance of low-selling categories.
+* Focus marketing efforts on high-value customers.
+* Optimize inventory based on demand trends.
+* Increase sales in underperforming regions.
+
+### Deliverables
+
+✅ Professional Presentation Deck
+
+✅ Statistical Testing Report
+
+✅ Business Recommendations
+
+### Key Outcome
+
+Converted analytical findings into business strategies and actionable insights.
+
+---
+
+# 📌 Task 5: Capstone Integration & Portfolio Finalization
+
+### Objective
+
+Compile all internship projects into a single professional portfolio.
+
+### Activities Performed
+
+* Repository Organization
+* Documentation Enhancement
+* Portfolio Development
+* LinkedIn Content Preparation
+* Final Review
+
+### Deliverables
+
+✅ Master Portfolio Repository
+
+✅ Professional README
+
+✅ Project Documentation
+
+### Key Outcome
+
+Created a complete Data Analytics portfolio showcasing technical and analytical skills.
+
+---
+
+# 📊 Key Business Insights
+
+### Revenue Insights
+
+* Revenue showed significant variation across product categories.
+* A small number of products contributed a large share of revenue.
+
+### Customer Insights
+
+* Repeat customers generated substantial revenue.
+* Customer purchasing behavior varied across regions.
+
+### Product Insights
+
+* Certain product categories consistently outperformed others.
+* Seasonal trends influenced product demand.
+
+### Operational Insights
+
+* Inventory planning can be improved using sales patterns.
+* Data-driven marketing can increase customer retention.
+
+---
+
+# 📈 Skills Demonstrated
+
+### Data Analytics
+
+* Data Cleaning
+* Data Transformation
 * Data Validation
-* Missing Value Handling
-* Duplicate Removal
-
-## 🐬 SQL
-
-* Data Extraction
-* Data Aggregation
-* Business Query Writing
-* Reporting
-
-## 📊 Data Analysis
-
 * Exploratory Data Analysis
-* Trend Analysis
-* Customer Analytics
-* Product Analytics
 
-## 📈 Data Visualization
+### SQL
 
-* Power BI Dashboard Design
+* Filtering
+* Aggregations
+* Joins
+* Subqueries
+* Business Queries
+
+### Business Intelligence
+
 * KPI Development
-* Interactive Reporting
+* Dashboard Design
+* Performance Monitoring
 
-## 💼 Business Intelligence
+### Visualization
 
-* Insight Generation
-* Decision Support
+* Power BI
+* Excel Charts
+* Business Presentations
+
+### Professional Skills
+
+* Documentation
 * Data Storytelling
+* Presentation Skills
+* GitHub Portfolio Management
 
 ---
 
-# 🎓 Internship Learning Outcomes
+# 🏆 Internship Achievements
 
-✅ End-to-End Data Analytics Workflow
-✅ SQL Query Development
-✅ Business Insight Generation
-✅ Dashboard Creation using Power BI
-✅ Data Storytelling & Presentation Skills
-✅ Real-World E-Commerce Data Analysis
+✔ Completed 5 Data Analytics Projects
+
+✔ Built Interactive Business Dashboard
+
+✔ Performed SQL-Based Business Analysis
+
+✔ Generated Actionable Insights
+
+✔ Created Professional Presentations
+
+✔ Developed End-to-End Analytics Portfolio
 
 ---
 
-# 🙌 Acknowledgement
+# 🙏 Acknowledgement
 
-Special thanks to **ApexPlanet Software Pvt. Ltd.** for providing the opportunity to work on real-world data analytics projects and enhance practical skills in SQL, Data Analysis, Power BI, and Business Intelligence.
+Special thanks to **ApexPlanet Software Pvt. Ltd.** for providing this valuable opportunity to gain hands-on experience in Data Analytics and Business Intelligence.
+
+This internship helped strengthen technical expertise, analytical thinking, and professional project management skills.
 
 ---
 
-# 👨‍💻 Author
+## 👨‍💻 Author
 
 **Vihan Ratnam**
-📊 Data Analytics Intern
-🏢 ApexPlanet Software Pvt. Ltd.
-📅 Internship Project – E-Commerce Data Analytics Repository 🚀
+**Data Analytics Intern**
+**ApexPlanet Software Pvt. Ltd.**
+
+⭐ *If you found this project useful, don't forget to star the repository and connect with me on LinkedIn!* 🚀
