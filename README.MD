@@ -1,319 +1,297 @@
-Based on the ApexPlanet PDF you uploaded, here is a simple explanation of **Task 1** and **Task 2**.
+You can use the following **complete GitHub README.md** for all three internship tasks.
 
-# Task 1: Data Immersion & Wrangling
+# 📊 ApexPlanet Data Analytics Internship
 
-**Timeline:** 10 Days 
+## E-Commerce Data Analytics Project
 
-## Objective
-
-Understand the dataset, identify data quality issues, clean the data, and prepare it for analysis. 
-
-## What You Need to Do
-
-### Step 1: Data Familiarization
-
-* Open the dataset.
-* Understand every column.
-* Create a **Data Dictionary**.
-
-Example:
-
-| Column Name | Description           | Data Type |
-| ----------- | --------------------- | --------- |
-| CID         | Customer ID           | Integer   |
-| TID         | Transaction ID        | Integer   |
-| Gender      | Customer Gender       | Text      |
-| Net Amount  | Final Purchase Amount | Decimal   |
+This repository contains the completed tasks for the **Data Analytics Internship at ApexPlanet Software Pvt. Ltd.** The project focuses on cleaning, analyzing, and visualizing an E-Commerce dataset using SQL, Excel, and Power BI.
 
 ---
 
-### Step 2: Data Quality Assessment
+# 📝 Task 1: Data Cleaning & Preparation
 
-Check for:
+## 🎯 Objective
 
-* Missing Values
-* Duplicate Records
-* Extra Spaces
-* Incorrect Data Types
-* Outliers
+To prepare the raw e-commerce dataset for analysis by identifying and correcting data quality issues.
 
-Examples:
+## 🛠 Tools Used
 
-```sql
-SELECT COUNT(*) FROM sales_data;
-```
+* MySQL
+* SQL
+* Excel
 
-```sql
-SELECT *
-FROM sales_data
-WHERE Gender IS NULL;
-```
+## Activities Performed
 
----
+### 1. Removed Duplicate Records
 
-### Step 3: Data Cleaning
+Used Transaction ID to identify and remove duplicate entries.
 
-Perform:
+### 2. Handled Missing Values
 
-#### Remove Duplicates
+* Replaced missing Coupon values with **"No Coupon"**
+* Checked for null values across important columns.
 
-```sql
-DELETE FROM sales_data
-WHERE ...;
-```
+### 3. Standardized Data
 
-#### Handle Missing Values
+* Trimmed extra spaces.
+* Standardized text formatting.
+* Corrected inconsistent values.
 
-```sql
-UPDATE sales_data
-SET `Discount Name`='No Discount'
-WHERE `Discount Name` IS NULL;
-```
+### 4. Verified Data Types
 
-#### Trim Extra Spaces
+Ensured:
 
-```sql
-UPDATE sales_data
-SET Gender = TRIM(Gender);
-```
+* Dates were stored correctly.
+* Revenue and Amount columns used numeric data types.
 
-#### Standardize Formats
+### 5. Exported Clean Dataset
 
-* Date format
-* Text format
+Generated a clean dataset for further analysis and dashboard development.
 
----
+## Deliverables
 
-### Step 4: Feature Engineering
-
-Create new columns.
-
-Example:
-
-```sql
-ALTER TABLE sales_data
-ADD COLUMN Purchase_Month VARCHAR(20);
-```
-
-Populate it:
-
-```sql
-UPDATE sales_data
-SET Purchase_Month = MONTHNAME(Purchase_Date);
-```
-
-You already created columns like:
-
-* Purchase Month
-* Discount Percentage
-* Spending Category
-
-These count as feature engineering.
-
----
-
-### Deliverables for Task 1
-
-GitHub Repository:
-
-* Data Dictionary
 * SQL Cleaning Script
-* Cleaned Dataset
-
-LinkedIn Video:
-
-* 3–5 minutes
-* Explain data issues and cleaning process 
-
----
-
-# Task 2: Exploratory Data Analysis (EDA) & Business Intelligence
-
-**Timeline:** 14 Days 
-
-## Objective
-
-Analyze the cleaned dataset, discover insights, answer business questions using SQL, and create a dashboard. 
-
----
-
-## Step 1: Descriptive Statistics
-
-Calculate:
-
-### Total Revenue
-
-```sql
-SELECT SUM(`Net Amount`)
-FROM `clean data`;
-```
-
-### Average Order Value
-
-```sql
-SELECT AVG(`Net Amount`)
-FROM `clean data`;
-```
-
-### Highest Order
-
-```sql
-SELECT MAX(`Net Amount`)
-FROM `clean data`;
-```
-
-### Lowest Order
-
-```sql
-SELECT MIN(`Net Amount`)
-FROM `clean data`;
-```
-
-### Total Orders
-
-```sql
-SELECT COUNT(*)
-FROM `clean data`;
-```
-
----
-
-## Step 2: Univariate Analysis
-
-Analyze one variable at a time.
-
-### Product Category Analysis
-
-```sql
-SELECT `Product Category`,
-COUNT(*) AS Orders
-FROM `clean data`
-GROUP BY `Product Category`;
-```
-
-Create:
-
-* Bar Chart
-
----
-
-### Gender Analysis
-
-```sql
-SELECT Gender,
-COUNT(*) AS Customers
-FROM `clean data`
-GROUP BY Gender;
-```
-
-Create:
-
-* Pie Chart
-
----
-
-### Purchase Method Analysis
-
-```sql
-SELECT `Purchase Method`,
-COUNT(*) AS Orders
-FROM `clean data`
-GROUP BY `Purchase Method`;
-```
-
-Create:
-
-* Pie Chart
-
----
-
-## Step 3: Business Questions (SQL)
-
-Example questions:
-
-### Top 5 Categories by Revenue
-
-```sql
-SELECT `Product Category`,
-SUM(`Net Amount`) AS Revenue
-FROM `clean data`
-GROUP BY `Product Category`
-ORDER BY Revenue DESC
-LIMIT 5;
-```
-
-### Monthly Revenue Trend
-
-```sql
-SELECT `Purchase Month`,
-SUM(`Net Amount`) AS Revenue
-FROM `clean data`
-GROUP BY `Purchase Month`;
-```
-
-### Revenue by Location
-
-```sql
-SELECT Location,
-SUM(`Net Amount`) AS Revenue
-FROM `clean data`
-GROUP BY Location;
-```
-
-### Revenue by Gender
-
-```sql
-SELECT Gender,
-SUM(`Net Amount`) AS Revenue
-FROM `clean data`
-GROUP BY Gender;
-```
-
----
-
-## Step 4: Dashboard
-
-Create in Excel.
-
-Include:
-
-### KPI Cards
-
-* Total Revenue
-* Total Orders
-* Average Order Value
-* Total Discount
-
-### Charts
-
-* Revenue by Category
-* Monthly Revenue Trend
-* Revenue by Location
-* Gender Distribution
-* Payment Method Distribution
-
-A static Excel dashboard is enough for Task 2. 
-
----
-
-# Final Submission
-
-### Task 1 GitHub
-
+* Cleaned Dataset (Excel/CSV)
 * Data Dictionary
-* SQL Cleaning Script
-* Cleaned Dataset
 
-### Task 2 GitHub
+---
 
-* EDA Report
+# 📖 Data Dictionary
+
+| Column Name      | Description                   |
+| ---------------- | ----------------------------- |
+| Transaction_ID   | Unique transaction identifier |
+| Customer_ID      | Unique customer identifier    |
+| Customer_Name    | Customer name                 |
+| Age              | Customer age                  |
+| Gender           | Customer gender               |
+| Product_Category | Purchased product category    |
+| Product_Name     | Product purchased             |
+| Quantity         | Number of items purchased     |
+| Gross_Amount     | Total amount before discounts |
+| Discount         | Discount applied              |
+| Net_Amount       | Final amount after discount   |
+| Revenue          | Revenue generated             |
+| Purchase_Method  | Payment method used           |
+| Coupon_Name      | Coupon applied                |
+| Purchase_Date    | Date of purchase              |
+| Location         | Customer city/location        |
+
+---
+
+# 📊 Task 2: Exploratory Data Analysis (EDA)
+
+## 🎯 Objective
+
+Analyze the cleaned dataset and uncover meaningful business insights.
+
+## 🛠 Tools Used
+
+* SQL
+* Excel
+* Pivot Tables
+* Charts
+
+## Analysis Performed
+
+### Revenue Analysis
+
+* Total Revenue Generated
+* Average Revenue Per Order
+
+### Customer Analysis
+
+* Revenue by Gender
+* Revenue by Age Group
+
+### Product Analysis
+
+* Revenue by Product Category
+* Gross Amount by Category
+
+### Payment Analysis
+
+* Revenue by Purchase Method
+
+### Location Analysis
+
+* Revenue by City
+
+### Discount Analysis
+
+* Product Sales by Discount Campaign
+
+## Key Findings
+
+### Revenue
+
+* Total Revenue: ₹158.18 Million
+* Average Revenue: ₹2.88K
+
+### Product Performance
+
+* Electronics generated the highest revenue.
+* Clothing ranked second.
+
+### Customer Behavior
+
+* Revenue contribution was balanced across genders.
+* Medium-spending customers generated the highest sales.
+
+### Payment Trends
+
+* Credit Card transactions generated the highest revenue.
+
+### Location Insights
+
+* Mumbai contributed the highest revenue among major cities.
+
+## Deliverables
+
 * SQL Queries
-* Query Results
-* Dashboard.xlsx
+* EDA Report
+* Business Insights Summary
 
-### LinkedIn Videos
+---
 
-* Task 1: 2–3 min
-* Task 2: 2–3 min
+# 📈 Task 3: Interactive Dashboard Development
 
-Since you've already cleaned the dataset and created columns like **Purchase Month**, **Discount Percentage**, and **Spending Category**, Task 1 is largely complete. Your focus now should be on the SQL analysis, charts, and dashboard required for Task 2.
+## 🎯 Objective
+
+Develop a fully interactive Power BI dashboard for business decision-making.
+
+## 🛠 Tools Used
+
+* Power BI Desktop
+* Excel
+* DAX
+* Data Modeling
+
+---
+
+# Dashboard Overview
+
+## 📄 Page 1: Executive Summary Dashboard
+
+### KPIs
+
+* Total Revenue: ₹158.18M
+* Average Revenue: ₹2.88K
+* Total Orders: 55K
+* Total Customers: 29.07K
+
+### Dashboard Screenshot
+
+```md
+![Executive Summary Dashboard](Screenshots/Executive_Summary.png)
+```
+
+### Key Visuals
+
+* Revenue Trend by Month
+* Revenue by Product Category
+* Gross Amount by Product Category
+* Revenue by Gender
+* Revenue by Purchase Method
+
+### Filters
+
+* Year
+* Age Group
+* Product Category
+* Purchase Method
+
+---
+
+## 📄 Page 2: Customer & Product Dashboard
+
+### Dashboard Screenshot
+
+```md
+![Customer Product Dashboard](Screenshots/Customer_Product_Dashboard.png)
+```
+
+### Key Visuals
+
+* Revenue by Spending Category
+* Count of Transactions by Gender
+* Revenue by Location
+* Product Category by Discount Name
+* Transaction Count by Product Category
+
+### Filters
+
+* Year
+* Age Group
+* Product Category
+* Purchase Method
+
+---
+
+# 📊 Dashboard Insights
+
+## Revenue Insights
+
+* Electronics generated the highest revenue.
+* Clothing was the second-best performing category.
+* Revenue fluctuated across months.
+
+## Customer Insights
+
+* Medium-spending customers contributed the highest revenue.
+* Customer distribution was balanced across genders.
+
+## Payment Insights
+
+* Credit Card was the most preferred payment method.
+* Digital payments dominated transactions.
+
+## Product Insights
+
+* Electronics recorded the highest transaction count.
+* Most purchases were made without coupons.
+
+---
+
+# 💡 Business Recommendations
+
+### Increase Revenue
+
+* Promote Electronics and Clothing through targeted campaigns.
+* Launch offers during low-performing months.
+
+### Improve Customer Retention
+
+* Introduce loyalty programs.
+* Create personalized offers based on spending patterns.
+
+### Enhance Payment Adoption
+
+* Offer cashback for digital payments.
+* Improve low-performing payment channels.
+
+### Product Strategy
+
+* Maintain inventory for high-demand categories.
+* Expand successful product segments.
+
+---
+
+## 👨‍💻 Internship Details
+
+**Company:** ApexPlanet Software Pvt. Ltd.
+
+**Domain:** Data Analytics
+
+**Tools:** SQL, Excel, Power BI
+
+**Project:** E-Commerce Data Analytics Dashboard
+
+**Outcome:** Successfully completed Data Cleaning, Exploratory Data Analysis (EDA), and Interactive Dashboard Development tasks with actionable business insights. 🚀
+
+👨‍💻 Author
+
+Vihan Ratnam
+
+
+
