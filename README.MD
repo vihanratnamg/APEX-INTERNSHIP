@@ -1,179 +1,419 @@
-🔹 Task 1: Data Cleaning & Preparation
-📌 Objective
+# 🛒 E-Commerce Data Analytics Internship Project
 
-Prepare raw e-commerce transaction data for analysis by identifying and resolving data quality issues.
+## 📌 Overview
 
-🛠 Tools Used
-MySQL
-SQL
-MySQL Workbench
-VS Code
-📋 Tasks Performed
-Removed duplicate records.
-Handled missing and null values.
-Standardized date formats.
-Corrected inconsistent category names.
-Validated numerical fields.
-Ensured overall data consistency.
-📊 Outcome
+This repository contains all four tasks completed as part of the **Data Analytics Internship** at **🏢 ApexPlanet Software Pvt. Ltd.** The project demonstrates the complete Data Analytics workflow, from data cleaning to business storytelling using SQL, Power BI, Excel, and PowerPoint.
 
-A clean and structured dataset ready for exploratory data analysis and visualization.
+### 🎯 Project Objectives
 
-📂 Deliverables
-SQL Cleaning Script
-Cleaned Dataset (CSV)
-Data Dictionary
-🔹 Task 2: Exploratory Data Analysis (EDA) Using SQL
-📌 Objective
+* Clean and preprocess raw e-commerce data.
+* Perform Exploratory Data Analysis (EDA).
+* Generate business insights using SQL.
+* Build interactive dashboards.
+* Create a storytelling presentation for stakeholders.
 
-Analyze cleaned e-commerce data to uncover business insights and sales trends.
+---
 
-🛠 Tools Used
-MySQL
-SQL
-Excel
-📋 Analysis Performed
-Revenue Analysis
-Total Revenue
-Average Order Value
-Revenue by Category
-Customer Analysis
-Customer Spending Patterns
-Order Distribution
-Product Analysis
-Top Selling Categories
-Low Performing Categories
-Payment Analysis
-Revenue by Payment Method
-Location Analysis
-Revenue by City
-📊 Key Insights
-Electronics generated the highest revenue.
-Medium-spending customers contributed the most revenue.
-Credit Card transactions dominated sales.
-Mumbai was the highest revenue-generating city.
-📂 Deliverables
-SQL Queries
-Business Insights Report
-Summary Statistics
-🔹 Task 3: Interactive Dashboard Development
-📌 Objective
+# 📊 Task 1: Data Cleaning & Preprocessing
 
-Create an interactive dashboard to visualize business performance and customer behavior.
+## 🎯 Objective
 
-🛠 Tools Used
-Power BI
-SQL
-Excel
-📋 Dashboard Features
-Executive Overview
-Total Revenue
-Total Orders
-Average Order Value
-Customer Count
-Sales Analysis
-Monthly Revenue Trends
-Product Category Performance
-City-wise Revenue Distribution
-Customer Insights
-Spending Segmentation
-Payment Method Analysis
-Discount Campaign Performance
-Interactive Features
-Slicers
-Dynamic Filters
-Drill-Through Analysis
-KPI Cards
-📊 Key Insights
-Electronics remains the top-performing category.
-Revenue peaks during festive months.
-Medium spenders drive the majority of sales.
-Credit Cards contribute the highest revenue share.
-📂 Deliverables
-Power BI Dashboard (.pbix)
-Dashboard Screenshots
-Dashboard Insights Report
-🔹 Task 4: Data Storytelling & Statistical Validation
-📌 Objective
+The goal of this task was to transform raw e-commerce data into a clean and analysis-ready dataset by identifying and correcting data quality issues.
 
-Transform analytical findings into a compelling business story and validate insights using statistical methods.
+## 🛠️ Tools Used
 
-🛠 Tools Used
-SQL
-Power BI
-Excel
-PowerPoint
-Statistical Analysis
-📊 Key Metrics
-Metric	Value
-Total Revenue	₹158.18 Million
-Total Orders	55,000
-Average Order Value	₹2,875
-Unique Customers	29,071
-📈 Business Insights
-Product Category Performance
-Electronics generated ₹47M revenue.
-Clothing generated ₹31M revenue.
-Top three categories contributed over 64% of total revenue.
-Revenue Trends
-December recorded the highest revenue.
-February recorded the lowest revenue.
-Seasonal demand significantly influenced sales performance.
-Customer Segmentation
-Gender distribution was nearly equal.
-Medium spenders generated the highest revenue contribution.
-Discount & Payment Analysis
-Over 50% of orders were placed without coupons.
-Credit Cards generated the highest revenue.
-Regional Performance
-Mumbai was the top revenue-generating city.
-Delhi and Hyderabad also contributed significantly.
-📊 Statistical Validation
-Hypothesis Test
+* 🐬 MySQL
+* 📑 SQL
+* 📗 Microsoft Excel
 
-Chi-Square Test of Independence
+## 📂 Dataset Information
 
-Null Hypothesis (H₀)
+The dataset includes:
 
-Gender and Spending Category are independent.
+* 🛍️ Order Details
+* 👥 Customer Information
+* 📦 Product Information
+* 💰 Sales Data
+* 🚚 Shipping Information
+* 📈 Revenue Data
 
-Alternative Hypothesis (H₁)
+## 🔧 Steps Performed
 
-Gender and Spending Category are dependent.
+### 📥 Data Import
 
-Results
-Metric	Value
-Chi-Square Statistic	2.84
-Degrees of Freedom	4
-p-value	0.585
-Critical Value	9.488
-Conclusion
+* Imported CSV dataset into MySQL.
+* Verified table structure and data types.
 
-Since the p-value is greater than 0.05, the null hypothesis was not rejected. Gender does not significantly influence spending category, indicating that marketing strategies should focus on spending behavior rather than gender-based targeting.
+### 🧹 Data Cleaning
 
-💡 Recommendations
-Increase promotions during low-sales months.
-Focus marketing on Electronics and Clothing categories.
-Retain medium-spending customers through loyalty programs.
-Partner with credit card providers for promotional offers.
-Expand campaigns in emerging Tier-2 cities.
-📂 Deliverables
-Business Presentation
-Statistical Analysis Report
-Data Storytelling Report
-Strategic Recommendations
-🚀 Internship Learning Outcomes
+* Removed duplicate records.
+* Eliminated redundant entries.
+* Corrected inconsistent values.
 
-Through these four tasks, I gained hands-on experience in:
+### ❌ Missing Value Handling
 
-Data Cleaning and Preparation
-SQL Query Writing
-Exploratory Data Analysis
-Business Intelligence Reporting
-Dashboard Development
-Data Storytelling
-Statistical Hypothesis Testing
-Business Decision-Making Using Data
-👨‍💻 Author
+* Identified null values.
+* Replaced or removed incomplete records.
 
-Vihan Ratnam
+### 📅 Data Standardization
+
+* Standardized date formats.
+* Corrected text formatting issues.
+* Unified category names.
+
+### ✅ Data Validation
+
+* Checked numerical columns.
+* Removed invalid values.
+* Ensured data consistency.
+
+### 📤 Data Export
+
+* Exported cleaned dataset for further analysis.
+
+## 🎯 Key Outcomes
+
+✔️ Improved data quality
+✔️ Removed inconsistencies
+✔️ Enhanced data reliability
+✔️ Prepared dataset for analysis
+
+## 📁 Deliverables
+
+* SQL Cleaning Script
+* Cleaned CSV Dataset
+* Data Dictionary
+* Documentation
+
+---
+
+# 📈 Task 2: Exploratory Data Analysis (EDA) & SQL Insights
+
+## 🎯 Objective
+
+Analyze the cleaned dataset using SQL queries to uncover trends, patterns, and actionable business insights.
+
+## 🛠️ Tools Used
+
+* 🐬 MySQL
+* 📑 SQL
+* 📗 Microsoft Excel
+
+## 🔍 Analysis Performed
+
+### 💰 Sales Analysis
+
+* Total Revenue Generated
+* Monthly Revenue Trends
+* Yearly Revenue Trends
+* Revenue by Category
+
+### 👥 Customer Analysis
+
+* Total Customers
+* Top Customers by Revenue
+* Customer Purchase Patterns
+* Repeat Customer Analysis
+
+### 📦 Product Analysis
+
+* Best Selling Products
+* Top Product Categories
+* Revenue Contribution by Product
+* Product Demand Trends
+
+### 🛒 Order Analysis
+
+* Total Orders
+* Average Order Value
+* Order Distribution
+* Order Frequency
+
+## 🧮 SQL Concepts Used
+
+* SUM()
+* AVG()
+* COUNT()
+* MAX()
+* MIN()
+* GROUP BY
+* HAVING
+* ORDER BY
+* WHERE
+* MONTH()
+* YEAR()
+
+## 💡 Key Business Insights
+
+### 📈 Revenue Insights
+
+* Identified peak sales periods.
+* Analyzed revenue growth trends.
+* Determined top revenue contributors.
+
+### 👤 Customer Insights
+
+* Recognized high-value customers.
+* Evaluated purchasing behavior.
+* Identified repeat buyers.
+
+### 📦 Product Insights
+
+* Found best-selling products.
+* Evaluated category performance.
+* Measured product profitability.
+
+## 🎯 Benefits
+
+✔️ Better understanding of sales performance
+✔️ Improved customer insights
+✔️ Data-driven business decisions
+✔️ Identification of growth opportunities
+
+## 📁 Deliverables
+
+* SQL Query File
+* EDA Report
+* Business Insights Report
+
+---
+
+# 📊 Task 3: Interactive Dashboard Development
+
+## 🎯 Objective
+
+Develop an interactive Power BI dashboard that allows users to monitor business performance and explore insights visually.
+
+## 🛠️ Tools Used
+
+* 📊 Power BI
+* 📗 Excel
+* 📑 DAX
+
+## 🎨 Dashboard Components
+
+### 💰 KPI Cards
+
+Dashboard displays:
+
+* Total Revenue
+* Total Orders
+* Total Customers
+* Average Order Value
+
+### 📈 Revenue Analysis
+
+* Monthly Revenue Trends
+* Revenue by Category
+* Revenue Distribution
+
+### 👥 Customer Analysis
+
+* Customer Segmentation
+* Top Customers
+* Customer Contribution Analysis
+
+### 📦 Product Analysis
+
+* Best Selling Products
+* Product Revenue Analysis
+* Category Performance
+
+### 🎛️ Interactive Filters
+
+* Year Filter
+* Month Filter
+* Category Filter
+* Customer Filter
+
+### 🔄 Interactive Features
+
+* Drill-down Analysis
+* Cross Filtering
+* Dynamic Reports
+* Interactive Visuals
+
+## 📄 Dashboard Pages
+
+### 🏠 Page 1: Executive Summary
+
+Provides:
+
+* Revenue Overview
+* Customer Overview
+* Product Overview
+* Order Overview
+
+### 🔍 Page 2: Detailed Insights
+
+Provides:
+
+* Product Analysis
+* Category Analysis
+* Customer Behavior
+* Revenue Trends
+
+## 🎯 Benefits
+
+✔️ Easy performance tracking
+✔️ Interactive data exploration
+✔️ Better business monitoring
+✔️ Faster decision-making
+
+## 📁 Deliverables
+
+* Power BI Dashboard (.pbix)
+* Dashboard Screenshots
+* Dashboard Documentation
+
+---
+
+# 📖 Task 4: Data Storytelling Presentation
+
+## 🎯 Objective
+
+Present analytical findings in a clear and engaging story format to help stakeholders understand business performance and make informed decisions.
+
+## 🛠️ Tools Used
+
+* 📊 Power BI
+* 📗 Excel
+* 📽️ Microsoft PowerPoint
+
+## 📋 Presentation Structure
+
+### 🎬 Slide 1: Title Slide
+
+* Project Title
+* Internship Details
+* Author Information
+
+### 📌 Slide 2: Project Overview
+
+* Business Problem
+* Dataset Overview
+* Objectives
+
+### 🧹 Slide 3: Data Cleaning Summary
+
+* Cleaning Process
+* Data Quality Improvements
+* Dataset Preparation
+
+### 📊 Slide 4: Exploratory Data Analysis
+
+* Revenue Insights
+* Customer Insights
+* Product Insights
+
+### 📈 Slide 5: Dashboard Overview
+
+* Dashboard Features
+* KPI Metrics
+* Interactive Visualizations
+
+### 💰 Slide 6: Revenue Story
+
+* Revenue Trends
+* Peak Sales Periods
+* Growth Opportunities
+
+### 👥 Slide 7: Customer Story
+
+* Customer Behavior
+* Valuable Customers
+* Retention Opportunities
+
+### 📦 Slide 8: Product Story
+
+* Best-Selling Products
+* Top Categories
+* Demand Analysis
+
+### 💡 Slide 9: Recommendations
+
+* Improve customer retention.
+* Focus on top-performing categories.
+* Optimize inventory management.
+* Enhance marketing strategies.
+
+### 🎯 Slide 10: Conclusion
+
+* Key Findings
+* Business Impact
+* Future Improvements
+
+## 🌟 Key Findings
+
+📈 Revenue shows seasonal trends.
+👥 Customer behavior impacts profitability.
+📦 Product categories contribute differently to revenue.
+📊 Dashboards improve business visibility.
+
+## 📁 Deliverables
+
+* PowerPoint Presentation
+* Dashboard Screenshots
+* Storytelling Report
+
+---
+
+# 🚀 Skills Demonstrated
+
+## 🧹 Data Cleaning
+
+* Data Validation
+* Missing Value Handling
+* Duplicate Removal
+
+## 🐬 SQL
+
+* Data Extraction
+* Data Aggregation
+* Business Query Writing
+* Reporting
+
+## 📊 Data Analysis
+
+* Exploratory Data Analysis
+* Trend Analysis
+* Customer Analytics
+* Product Analytics
+
+## 📈 Data Visualization
+
+* Power BI Dashboard Design
+* KPI Development
+* Interactive Reporting
+
+## 💼 Business Intelligence
+
+* Insight Generation
+* Decision Support
+* Data Storytelling
+
+---
+
+# 🎓 Internship Learning Outcomes
+
+✅ End-to-End Data Analytics Workflow
+✅ SQL Query Development
+✅ Business Insight Generation
+✅ Dashboard Creation using Power BI
+✅ Data Storytelling & Presentation Skills
+✅ Real-World E-Commerce Data Analysis
+
+---
+
+# 🙌 Acknowledgement
+
+Special thanks to **ApexPlanet Software Pvt. Ltd.** for providing the opportunity to work on real-world data analytics projects and enhance practical skills in SQL, Data Analysis, Power BI, and Business Intelligence.
+
+---
+
+# 👨‍💻 Author
+
+**Vihan Ratnam**
+📊 Data Analytics Intern
+🏢 ApexPlanet Software Pvt. Ltd.
+📅 Internship Project – E-Commerce Data Analytics Repository 🚀
