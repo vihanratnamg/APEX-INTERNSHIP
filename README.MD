@@ -1,297 +1,179 @@
-You can use the following **complete GitHub README.md** for all three internship tasks.
-
-# 📊 ApexPlanet Data Analytics Internship
-
-## E-Commerce Data Analytics Project
-
-This repository contains the completed tasks for the **Data Analytics Internship at ApexPlanet Software Pvt. Ltd.** The project focuses on cleaning, analyzing, and visualizing an E-Commerce dataset using SQL, Excel, and Power BI.
-
----
-
-# 📝 Task 1: Data Cleaning & Preparation
-
-## 🎯 Objective
-
-To prepare the raw e-commerce dataset for analysis by identifying and correcting data quality issues.
-
-## 🛠 Tools Used
-
-* MySQL
-* SQL
-* Excel
-
-## Activities Performed
-
-### 1. Removed Duplicate Records
-
-Used Transaction ID to identify and remove duplicate entries.
-
-### 2. Handled Missing Values
-
-* Replaced missing Coupon values with **"No Coupon"**
-* Checked for null values across important columns.
-
-### 3. Standardized Data
-
-* Trimmed extra spaces.
-* Standardized text formatting.
-* Corrected inconsistent values.
-
-### 4. Verified Data Types
-
-Ensured:
-
-* Dates were stored correctly.
-* Revenue and Amount columns used numeric data types.
-
-### 5. Exported Clean Dataset
-
-Generated a clean dataset for further analysis and dashboard development.
-
-## Deliverables
-
-* SQL Cleaning Script
-* Cleaned Dataset (Excel/CSV)
-* Data Dictionary
-
----
-
-# 📖 Data Dictionary
-
-| Column Name      | Description                   |
-| ---------------- | ----------------------------- |
-| Transaction_ID   | Unique transaction identifier |
-| Customer_ID      | Unique customer identifier    |
-| Customer_Name    | Customer name                 |
-| Age              | Customer age                  |
-| Gender           | Customer gender               |
-| Product_Category | Purchased product category    |
-| Product_Name     | Product purchased             |
-| Quantity         | Number of items purchased     |
-| Gross_Amount     | Total amount before discounts |
-| Discount         | Discount applied              |
-| Net_Amount       | Final amount after discount   |
-| Revenue          | Revenue generated             |
-| Purchase_Method  | Payment method used           |
-| Coupon_Name      | Coupon applied                |
-| Purchase_Date    | Date of purchase              |
-| Location         | Customer city/location        |
-
----
-
-# 📊 Task 2: Exploratory Data Analysis (EDA)
-
-## 🎯 Objective
-
-Analyze the cleaned dataset and uncover meaningful business insights.
-
-## 🛠 Tools Used
-
-* SQL
-* Excel
-* Pivot Tables
-* Charts
-
-## Analysis Performed
-
-### Revenue Analysis
-
-* Total Revenue Generated
-* Average Revenue Per Order
-
-### Customer Analysis
-
-* Revenue by Gender
-* Revenue by Age Group
-
-### Product Analysis
-
-* Revenue by Product Category
-* Gross Amount by Category
-
-### Payment Analysis
-
-* Revenue by Purchase Method
-
-### Location Analysis
-
-* Revenue by City
-
-### Discount Analysis
-
-* Product Sales by Discount Campaign
-
-## Key Findings
-
-### Revenue
-
-* Total Revenue: ₹158.18 Million
-* Average Revenue: ₹2.88K
-
-### Product Performance
-
-* Electronics generated the highest revenue.
-* Clothing ranked second.
-
-### Customer Behavior
-
-* Revenue contribution was balanced across genders.
-* Medium-spending customers generated the highest sales.
-
-### Payment Trends
-
-* Credit Card transactions generated the highest revenue.
-
-### Location Insights
-
-* Mumbai contributed the highest revenue among major cities.
-
-## Deliverables
-
-* SQL Queries
-* EDA Report
-* Business Insights Summary
-
----
-
-# 📈 Task 3: Interactive Dashboard Development
-
-## 🎯 Objective
-
-Develop a fully interactive Power BI dashboard for business decision-making.
-
-## 🛠 Tools Used
-
-* Power BI Desktop
-* Excel
-* DAX
-* Data Modeling
-
----
-
-# Dashboard Overview
-
-## 📄 Page 1: Executive Summary Dashboard
-
-### KPIs
-
-* Total Revenue: ₹158.18M
-* Average Revenue: ₹2.88K
-* Total Orders: 55K
-* Total Customers: 29.07K
-
-### Dashboard Screenshot
-
-```md
-![Executive Summary Dashboard](Screenshots/Executive_Summary.png)
-```
-
-### Key Visuals
-
-* Revenue Trend by Month
-* Revenue by Product Category
-* Gross Amount by Product Category
-* Revenue by Gender
-* Revenue by Purchase Method
-
-### Filters
-
-* Year
-* Age Group
-* Product Category
-* Purchase Method
-
----
-
-## 📄 Page 2: Customer & Product Dashboard
-
-### Dashboard Screenshot
-
-```md
-![Customer Product Dashboard](Screenshots/Customer_Product_Dashboard.png)
-```
-
-### Key Visuals
-
-* Revenue by Spending Category
-* Count of Transactions by Gender
-* Revenue by Location
-* Product Category by Discount Name
-* Transaction Count by Product Category
-
-### Filters
-
-* Year
-* Age Group
-* Product Category
-* Purchase Method
-
----
-
-# 📊 Dashboard Insights
-
-## Revenue Insights
-
-* Electronics generated the highest revenue.
-* Clothing was the second-best performing category.
-* Revenue fluctuated across months.
-
-## Customer Insights
-
-* Medium-spending customers contributed the highest revenue.
-* Customer distribution was balanced across genders.
-
-## Payment Insights
-
-* Credit Card was the most preferred payment method.
-* Digital payments dominated transactions.
-
-## Product Insights
-
-* Electronics recorded the highest transaction count.
-* Most purchases were made without coupons.
-
----
-
-# 💡 Business Recommendations
-
-### Increase Revenue
-
-* Promote Electronics and Clothing through targeted campaigns.
-* Launch offers during low-performing months.
-
-### Improve Customer Retention
-
-* Introduce loyalty programs.
-* Create personalized offers based on spending patterns.
-
-### Enhance Payment Adoption
-
-* Offer cashback for digital payments.
-* Improve low-performing payment channels.
-
-### Product Strategy
-
-* Maintain inventory for high-demand categories.
-* Expand successful product segments.
-
----
-
-## 👨‍💻 Internship Details
-
-**Company:** ApexPlanet Software Pvt. Ltd.
-
-**Domain:** Data Analytics
-
-**Tools:** SQL, Excel, Power BI
-
-**Project:** E-Commerce Data Analytics Dashboard
-
-**Outcome:** Successfully completed Data Cleaning, Exploratory Data Analysis (EDA), and Interactive Dashboard Development tasks with actionable business insights. 🚀
-
+🔹 Task 1: Data Cleaning & Preparation
+📌 Objective
+
+Prepare raw e-commerce transaction data for analysis by identifying and resolving data quality issues.
+
+🛠 Tools Used
+MySQL
+SQL
+MySQL Workbench
+VS Code
+📋 Tasks Performed
+Removed duplicate records.
+Handled missing and null values.
+Standardized date formats.
+Corrected inconsistent category names.
+Validated numerical fields.
+Ensured overall data consistency.
+📊 Outcome
+
+A clean and structured dataset ready for exploratory data analysis and visualization.
+
+📂 Deliverables
+SQL Cleaning Script
+Cleaned Dataset (CSV)
+Data Dictionary
+🔹 Task 2: Exploratory Data Analysis (EDA) Using SQL
+📌 Objective
+
+Analyze cleaned e-commerce data to uncover business insights and sales trends.
+
+🛠 Tools Used
+MySQL
+SQL
+Excel
+📋 Analysis Performed
+Revenue Analysis
+Total Revenue
+Average Order Value
+Revenue by Category
+Customer Analysis
+Customer Spending Patterns
+Order Distribution
+Product Analysis
+Top Selling Categories
+Low Performing Categories
+Payment Analysis
+Revenue by Payment Method
+Location Analysis
+Revenue by City
+📊 Key Insights
+Electronics generated the highest revenue.
+Medium-spending customers contributed the most revenue.
+Credit Card transactions dominated sales.
+Mumbai was the highest revenue-generating city.
+📂 Deliverables
+SQL Queries
+Business Insights Report
+Summary Statistics
+🔹 Task 3: Interactive Dashboard Development
+📌 Objective
+
+Create an interactive dashboard to visualize business performance and customer behavior.
+
+🛠 Tools Used
+Power BI
+SQL
+Excel
+📋 Dashboard Features
+Executive Overview
+Total Revenue
+Total Orders
+Average Order Value
+Customer Count
+Sales Analysis
+Monthly Revenue Trends
+Product Category Performance
+City-wise Revenue Distribution
+Customer Insights
+Spending Segmentation
+Payment Method Analysis
+Discount Campaign Performance
+Interactive Features
+Slicers
+Dynamic Filters
+Drill-Through Analysis
+KPI Cards
+📊 Key Insights
+Electronics remains the top-performing category.
+Revenue peaks during festive months.
+Medium spenders drive the majority of sales.
+Credit Cards contribute the highest revenue share.
+📂 Deliverables
+Power BI Dashboard (.pbix)
+Dashboard Screenshots
+Dashboard Insights Report
+🔹 Task 4: Data Storytelling & Statistical Validation
+📌 Objective
+
+Transform analytical findings into a compelling business story and validate insights using statistical methods.
+
+🛠 Tools Used
+SQL
+Power BI
+Excel
+PowerPoint
+Statistical Analysis
+📊 Key Metrics
+Metric	Value
+Total Revenue	₹158.18 Million
+Total Orders	55,000
+Average Order Value	₹2,875
+Unique Customers	29,071
+📈 Business Insights
+Product Category Performance
+Electronics generated ₹47M revenue.
+Clothing generated ₹31M revenue.
+Top three categories contributed over 64% of total revenue.
+Revenue Trends
+December recorded the highest revenue.
+February recorded the lowest revenue.
+Seasonal demand significantly influenced sales performance.
+Customer Segmentation
+Gender distribution was nearly equal.
+Medium spenders generated the highest revenue contribution.
+Discount & Payment Analysis
+Over 50% of orders were placed without coupons.
+Credit Cards generated the highest revenue.
+Regional Performance
+Mumbai was the top revenue-generating city.
+Delhi and Hyderabad also contributed significantly.
+📊 Statistical Validation
+Hypothesis Test
+
+Chi-Square Test of Independence
+
+Null Hypothesis (H₀)
+
+Gender and Spending Category are independent.
+
+Alternative Hypothesis (H₁)
+
+Gender and Spending Category are dependent.
+
+Results
+Metric	Value
+Chi-Square Statistic	2.84
+Degrees of Freedom	4
+p-value	0.585
+Critical Value	9.488
+Conclusion
+
+Since the p-value is greater than 0.05, the null hypothesis was not rejected. Gender does not significantly influence spending category, indicating that marketing strategies should focus on spending behavior rather than gender-based targeting.
+
+💡 Recommendations
+Increase promotions during low-sales months.
+Focus marketing on Electronics and Clothing categories.
+Retain medium-spending customers through loyalty programs.
+Partner with credit card providers for promotional offers.
+Expand campaigns in emerging Tier-2 cities.
+📂 Deliverables
+Business Presentation
+Statistical Analysis Report
+Data Storytelling Report
+Strategic Recommendations
+🚀 Internship Learning Outcomes
+
+Through these four tasks, I gained hands-on experience in:
+
+Data Cleaning and Preparation
+SQL Query Writing
+Exploratory Data Analysis
+Business Intelligence Reporting
+Dashboard Development
+Data Storytelling
+Statistical Hypothesis Testing
+Business Decision-Making Using Data
 👨‍💻 Author
 
 Vihan Ratnam
-
-
-
